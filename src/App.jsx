@@ -1,0 +1,25 @@
+import Navbar from "../components/navbar";
+import LayoutP from "../Layouts/LayoutP";
+
+import { Routes, Route} from 'react-router-dom';
+import Inicio from "../pages/Inicio";
+import Contacto from "../pages/Contacto";
+import Blog from "../pages/Blog";
+import NotFound from "../pages/NotFound";
+
+
+const App = () => {
+  return (
+    <>
+    <Navbar />
+      <Routes path="/" element={<LayoutP />}>
+            <Route element={<Inicio />} path="/"></Route>
+            <Route element={<Contacto />} path="/Contacto"></Route>
+            <Route element={<Blog />} path="/Blog"></Route>
+            <Route element={<NotFound />} path="*"></Route>
+      </Routes>
+    </>
+  )
+}
+
+export default App;
