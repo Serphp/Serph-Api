@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Contacto = () => {
     return (
         <>
@@ -7,4 +8,15 @@ const Contacto = () => {
     )
 }
 
+=======
+const Contacto = () => {
+    return (
+        <>
+        <h1> Contacto </h1>
+        
+        </>
+    )
+}
+
+>>>>>>> 8fa7d2437bb9041f3c34fff5bb6c6193a7d4889f
 export default Contacto;
