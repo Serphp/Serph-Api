@@ -4,11 +4,11 @@ import { Link , NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
 <> 
-    <div className="navbar navbar-dak">
+    <div className="breadcrumb navbar navbar-dak">
         <div className="container-fluid">
-        <NavLink className="nav-link" to="/"> Inicio </NavLink>
+        <NavLink className="breadcrumb-item btn btn-outline-light" to="/"> Inicio </NavLink>
         <span className="logo"> {"/"}Serphp </span>
-        <NavLink className="nav-link" to="/blog"> blog </NavLink>
+        <NavLink className="breadcrumb-item btn btn-outline-light" to="/blog"> blog </NavLink>
         </div>
     </div>
 </>

@@ -2,7 +2,14 @@
 const Inicio = () => {
     return (
         <>
-        <h1> Inicio </h1>
+    <figure class="text-center">
+    <blockquote class="blockquote">
+        <p>Luego pienso en que poner aca.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Bryan <cite title="Source Title">R.</cite>
+    </figcaption>
+    </figure>
         
         </>
     )

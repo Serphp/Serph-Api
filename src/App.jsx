@@ -6,13 +6,14 @@ import Inicio from "../pages/Inicio";
 import Contacto from "../pages/Contacto";
 import Blog from "../pages/Blog";
 import NotFound from "../pages/NotFound";
+import Footer from "../components/Footer";
 
 
 const App = () => {
   return (
     <>
     {/* ESTRUCTURA DE INICIO / HOME*/}
-    <main className="container-fluid">
+    <main className="container-sm">
     <Navbar />
       <Routes path="/" element={<LayoutP />}>
             <Route element={<Inicio />} index></Route>
@@ -21,7 +22,7 @@ const App = () => {
             <Route element={<NotFound />} path="*"></Route>
       </Routes>
 
-      <div className="footer"> Footer </div>
+      <Footer/>
       </main>
     </>
   )

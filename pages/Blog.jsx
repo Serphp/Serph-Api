@@ -26,8 +26,12 @@ const Blog = () => {
     return (
         <>
             <h1>Blog</h1>
-            <input type="text" onChange={handleChange} className="form-control my-3 w-25 p-2 px-5" value={searchParams.get("filter") || ""}/>
-            <ul className="list-group">
+            <input type="text" onChange={handleChange} 
+            className="form-control form-control-lg"
+            placeholder="Buscador..."
+            value={searchParams.get("filter") || ""}/>
+
+            <ul className="list-group mt-3">
                 {data.filter((item) => {
                         let filter = searchParams.get("filter");
                         if (!filter) return true;
